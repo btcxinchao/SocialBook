@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social-Book</title>
+    <link rel="stylesheet" href="./assets/Css/global.css">
+    <link rel="stylesheet" href="./assets/Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <section id="nav">
+        <div class="container">
+            <div class="nav-left">
+                <img src="./assets/socialbook_img/images/logo.png" alt="" class="logo">
+                <ul>
+                    <li><img src="./assets/socialbook_img/images/notification.png" alt=""></li>
+                    <li><img src="./assets/socialbook_img/images/inbox.png" alt=""></li>
+                    <li><img src="./assets/socialbook_img/images/video.png" alt=""></li>
+                </ul>
+            </div>
+
+            <div class="nav-right">
+                <div class="search-box">
+                    <img src="./assets/socialbook_img/images/search.png" alt="">
+                    <input type="text" placeholder="search...">
+                </div>
+                <div class="nav-user-icon online " onclick="SettingsMenuToggle()">
+                    <img src="./assets/socialbook_img/images/profile-girl.png" alt="">
+                </div>
+            </div>
+
+            <!-- setting menu -->
+            <div class="settings-menu">
+                <div id="dark-btn">
+                    <span></span>
+                </div>
+
+                <div class="setting">
+                    <div class="user-profile">
+                        <img src="./assets/socialbook_img/images/profile-girl.png" alt="">
+                        <div>
+                            <p>Bui Tan Chuong</p>
+                            <a href="#">See your profile</a>
+                        </div>
+                    </div>
+                    <div class="user-profile">
+                        <img src="./assets/socialbook_img/images/feedback.png" alt="">
+                        <div>
+                            <p>Give feedback</p>
+                            <a href="#">Help us to improve the new design</a>
+                        </div>
+                    </div>
+                    <div class="settings-link">
+                        <img src="./assets/socialbook_img/images/setting.png" alt="" class="setting-icon">
+                        <div>
+                            <a witdh="10px" href="#">Settings & Privacy</a>
+                        </div>
+                    </div>
+                    <div class="settings-link">
+                        <img src="./assets/socialbook_img/images/help.png" alt="" class="setting-icon">
+                        <div>
+                            <a witdh="10px" href="#">Help & Support</a>
+                        </div>
+                    </div>
+                    <div class="settings-link">
+                        <img src="./assets/socialbook_img/images/display.png" alt="" class="setting-icon">
+                        <div>
+                            <a witdh="10px" href="#">Display % Accessibility</a>
+                        </div>
+                    </div>
+                    <div class="settings-link">
+                        <img src="./assets/socialbook_img/images/logout.png" alt="" class="setting-icon">
+                        <div>
+                            <a witdh="10px" href="#">Log out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- close Navigation -->
+   
+     <!-- profile page  -->
+      <div class="profile-container">
+  <div class="cover-photo">
+    <img src="./assets/socialbook_img/images/cover.png" alt="Cover Photo">
+  </div>
+
+  <div class="profile-content">
+    <div class="profile-top">
+      <div class="avatar-section">
+        <img src="./assets/socialbook_img/images/profile-girl.png" alt="Avatar" class="avatar-img">
+        <div class="user-info">
+          <h3>Bui Tan Chuong</h3>
+          <p>120 Friends • 20 mutual</p>
+          <img src="./assets/socialbook_img/images/girl-2.png" alt="" class="profile-friend-img">
+          <img src="./assets/socialbook_img/images/girl-3.png" alt=""class="profile-friend-img">
+          <img src="./assets/socialbook_img/images/girl-4.png" alt=""class="profile-friend-img">
+          <img src="./assets/socialbook_img/images/girl-5.png" alt=""class="profile-friend-img">
+          <img src="./assets/socialbook_img/images/girl-6.png" alt=""class="profile-friend-img">
+        </div>
+      </div>
+      <div class="action-section">
+        <!-- Nút chỉnh sửa hoặc cài đặt -->
+        <button class="edit-btn">Edit Profile</button>
+      </div>
+    </div>
+
+    <div class="profile-main">
+      <!-- Bạn có thể chia thành sidebar và content -->
+      <div class="profile-sidebar">
+        <!-- Thêm phần giới thiệu, ảnh, bạn bè... -->
+      </div>
+      <div class="profile-posts">
+        <!-- Các bài đăng sẽ ở đây -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+    <footer>
+        <p>Youtube Chuong : Front-end to Back-end</p>
+    </footer>
+   
+    <script src="./script.js">
+
+    </script>
+</body>
+
+</html>

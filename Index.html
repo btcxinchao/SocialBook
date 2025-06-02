@@ -16,29 +16,82 @@
 <body>
     <!-- Navigation -->
     <section id="nav">
-        <div class="container">
-            <div class="nav-left">
-                <img src="./assets/socialbook_img/images/logo.png" alt="" class="logo">
-                <ul>
-                    <li><img src="./assets/socialbook_img/images/notification.png" alt=""></li>
-                    <li><img src="./assets/socialbook_img/images/inbox.png" alt=""></li>
-                    <li><img src="./assets/socialbook_img/images/video.png" alt=""></li>
-                </ul>
-            </div>
+  <div class="container">
+    <div class="nav-left">
+      <!-- LOGO: Link về trang chủ -->
+      <a href="index.html">
+        <img src="./assets/socialbook_img/images/logo.png" alt="Logo" class="logo" />
+      </a>
 
-            <div class="nav-right">
-                <div class="search-box">
-                    <img src="./assets/socialbook_img/images/search.png" alt="">
-                    <input type="text" placeholder="search...">
-                </div>
-                <div class="nav-user-icon online">
-                    <img src="./assets/socialbook_img/images/profile-girl.png" alt="">
-                </div>
-            </div>
+      <ul>
+        <li>
+          <a href="#"><img src="./assets/socialbook_img/images/notification.png" alt="Notifications" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./assets/socialbook_img/images/inbox.png" alt="Inbox" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./assets/socialbook_img/images/video.png" alt="Video" /></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="nav-right">
+      <div class="search-box">
+        <img src="./assets/socialbook_img/images/search.png" alt="Search" />
+        <input type="text" placeholder="Search..." />
+      </div>
+      <div class="nav-user-icon online" onclick="SettingsMenuToggle()">
+        <img src="./assets/socialbook_img/images/profile-girl.png" alt="User" />
+      </div>
+    </div>
+
+    <!-- setting menu -->
+    <div class="settings-menu">
+      <div id="dark-btn"><span></span></div>
+
+      <div class="setting">
+        <div class="user-profile">
+          <img src="./assets/socialbook_img/images/profile-girl.png" alt="Profile" />
+          <div>
+            <p>Bui Tan Chuong</p>
+            <a href="profile.html">See your profile</a>
+          </div>
         </div>
-    </section>
-    <!-- close Navigation -->
 
+        <div class="user-profile">
+          <img src="./assets/socialbook_img/images/feedback.png" alt="Feedback" />
+          <div>
+            <p>Give feedback</p>
+            <a href="#">Help us improve the new design</a>
+          </div>
+        </div>
+
+        <div class="settings-link">
+          <img src="./assets/socialbook_img/images/setting.png" alt="Settings" class="setting-icon" />
+          <div><a href="#">Settings & Privacy</a></div>
+        </div>
+
+        <div class="settings-link">
+          <img src="./assets/socialbook_img/images/help.png" alt="Help" class="setting-icon" />
+          <div><a href="#">Help & Support</a></div>
+        </div>
+
+        <div class="settings-link">
+          <img src="./assets/socialbook_img/images/display.png" alt="Display" class="setting-icon" />
+          <div><a href="#">Display & Accessibility</a></div>
+        </div>
+
+        <div class="settings-link">
+          <img src="./assets/socialbook_img/images/logout.png" alt="Logout" class="setting-icon" />
+          <div><a href="#">Log out</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- close Navigation -->
     <!-- Content -->
     <section>
         <div class="container">
@@ -59,39 +112,135 @@
                     <a href="#"><img src="./assets/socialbook_img/images/shortcut-3.png" alt="">Web Fullstack
                         Development</a>
                     <a href="#"><img src="./assets/socialbook_img/images/shortcut-4.png" alt="">Web Book</a>
-
-
                 </div>
             </div>
             <!--close left sidebar -->
-
             <!-- main content -->
-            <div class="story-gallery">
-                <div class="story-box" style="background-image: url('./assets/socialbook_img/images/profile-girl.png');">
-                    <p>Post Story</p>
-                    <img class="avatar" src="./assets/socialbook_img/images/upload.png" alt="">
+            <div class="main-content">
+                <div class="story-gallery">
+                    <div class="story-box"
+                        style="background-image: url('./assets/socialbook_img/images/profile-girl.png');">
+                        <p>Post Story</p>
+                        <img class="avatar" src="./assets/socialbook_img/images/upload.png" alt="">
+                    </div>
+                    <div class="story-box" style="background-image: url('./assets/socialbook_img/images/girl-2.png');">
+                        <p>Post Story</p>
+                        <img class="avatar" src="./assets/socialbook_img/images/girl-2.png" alt="">
+                    </div>
+                    <div class="story-box" style="background-image: url('./assets/socialbook_img/images/girl-3.png');">
+                        <p>Post Story</p>
+                        <img class="avatar" src="./assets/socialbook_img/images/girl-3.png" alt="">
+                    </div>
+                    <div class="story-box" style="background-image: url('./assets/socialbook_img/images/girl-4.png');">
+                        <p>Post Story</p>
+                        <img class="avatar" src="./assets/socialbook_img/images/girl-4.png" alt="">
+                    </div>
+                    <div class="story-box" style="background-image: url('./assets/socialbook_img/images/girl-5.png');">
+                        <p>Post Story</p>
+                        <img class="avatar" src="./assets/socialbook_img/images/girl-5.png" alt="">
+                    </div>
                 </div>
-                <div class="story-box" style="background-image: url('./assets/socialbook_img/images/girl-2.png');">
-                    <p>Post Story</p>
-                    <img class="avatar" src="./assets/socialbook_img/images/girl-2.png" alt="">
+                <div class="write-post">
+                    <div class="user-profile">
+                        <img src="./assets/socialbook_img/images/profile-girl.png" alt="">
+                        <div>
+                            <p>Bui Tan Chuong</p>
+                            <small>Public <i class="fa-solid fa-sort-down"></i></small>
+                        </div>
+                    </div>
+                    <div class="post-input">
+                        <textarea rows="3" placeholder="Ban dang tim gi ?"></textarea>
+                        <div class="add-post-link">
+                            <a href="#"> <img src="./assets/socialbook_img/images/live-video.png" alt="">Live Video</a>
+                            <a href="#"> <img src="./assets/socialbook_img/images/photo.png" alt="">Photo/Video</a>
+                            <a href="#"> <img src="./assets/socialbook_img/images/feeling.png" alt="">Feeling/Active</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="story-box" style="background-image: url('./assets/socialbook_img/images/girl-3.png');">
-                    <p>Post Story</p>
-                    <img class="avatar" src="./assets/socialbook_img/images/girl-3.png" alt="">
+                <div class="post-container">
+                    <div class="user-profile">
+                        <img src="./assets/socialbook_img/images/profile-girl.png" alt="">
+                        <div>
+                            <p>Bui Tan Chuong</p>
+                            <span>Time 00:00</span>
+                        </div>
+                    </div>
+                    <p class="post-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni asperiores dolor vel? Corporis,
+                        neque ex! Animi doloremque tempora aliquam necessitatibus explicabo amet obcaecati deleniti
+                        labore deserunt impedit. At, totam officia.
+
+                        <img src="./assets/socialbook_img/images/girl-6.png" alt="">
+                    </p>
+                    <div class="post-row">
+                        <div class="active-icon">
+                            <div><img src="./assets/socialbook_img/images/like-blue.png" alt="">1k3</div>
+                            <div><img src="./assets/socialbook_img/images/comments.png" alt="">5k</div>
+                            <div><img src="./assets/socialbook_img/images/share.png" alt="">500</div>
+                        </div>
+                        <div class="post-profile-icon">
+
+                        </div>
+                    </div>
                 </div>
-                <div class="story-box" style="background-image: url('./assets/socialbook_img/images/girl-4.png');">
-                    <p>Post Story</p>
-                    <img class="avatar" src="./assets/socialbook_img/images/girl-4.png" alt="">
+                <div class="post-container">
+                    <div class="user-profile">
+                        <img src="./assets/socialbook_img/images/girl-3.png" alt="">
+                        <div>
+                            <p>Bui Tan Chuong</p>
+                            <span>Time 00:00</span>
+                        </div>
+                    </div>
+                    <p class="post-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni asperiores dolor vel? Corporis,
+                        neque ex! Animi doloremque tempora aliquam necessitatibus explicabo amet obcaecati deleniti
+                        labore deserunt impedit. At, totam officia.
+
+                        <img src="./assets/socialbook_img/images/girl-3.png" alt="">
+                    </p>
+                    <div class="post-row">
+                        <div class="active-icon">
+                            <div><img src="./assets/socialbook_img/images/like-blue.png" alt="">1k3</div>
+                            <div><img src="./assets/socialbook_img/images/comments.png" alt="">5k</div>
+                            <div><img src="./assets/socialbook_img/images/share.png" alt="">500</div>
+                        </div>
+                        <div class="post-profile-icon">
+
+                        </div>
+                    </div>
                 </div>
-                <div class="story-box" style="background-image: url('./assets/socialbook_img/images/girl-5.png');">
-                    <p>Post Story</p>
-                    <img class="avatar" src="./assets/socialbook_img/images/girl-5.png" alt="">
+                <div class="post-container">
+                    <div class="user-profile">
+                        <img src="./assets/socialbook_img/images/girl-5.png" alt="">
+                        <div>
+                            <p>Bui Tan Chuong</p>
+                            <span>Time 00:00</span>
+                        </div>
+                    </div>
+                    <p class="post-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni asperiores dolor vel? Corporis,
+                        neque ex! Animi doloremque tempora aliquam necessitatibus explicabo amet obcaecati deleniti
+                        labore deserunt impedit. At, totam officia.
+
+                        <img src="./assets/socialbook_img/images/girl-5.png" alt="">
+                    </p>
+                    <div class="post-row">
+                        <div class="active-icon">
+                            <div><img src="./assets/socialbook_img/images/like-blue.png" alt="">1k3</div>
+                            <div><img src="./assets/socialbook_img/images/comments.png" alt="">5k</div>
+                            <div><img src="./assets/socialbook_img/images/share.png" alt="">500</div>
+                        </div>
+                        <div class="post-profile-icon">
+
+                        </div>
+                    </div>
                 </div>
+
+                <footer>
+                    <p>Youtube Chuong : Front-end to Back-end</p>
+                </footer>
             </div>
-
-
             <!-- close main content -->
-
             <!-- right sidebar -->
             <div class="right-sidebar">
                 <div class="sidebar-title">
@@ -133,7 +282,7 @@
                 </div>
                 <div class="online-list">
                     <div class="online">
-                        <img src="./assets//socialbook_img/images/member-1.png" alt="">
+                        <img src="./assets//socialbook_img/images/profile-girl.png" alt="">
                     </div>
                     <p>Bui Tan Chuong</p>
                 </div>
@@ -157,12 +306,14 @@
 
                 </div>
             </div>
-
         </div>
         <!-- close right sidebar -->
         </div>
     </section>
     <!-- close Content -->
+    <script src="./script.js">
+
+    </script>
 </body>
 
 </html>
